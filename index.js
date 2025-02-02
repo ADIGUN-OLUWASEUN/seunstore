@@ -96,7 +96,7 @@ signInBtn.addEventListener("click", async () => {
         });
 
         alert("Sign-Up successful!");
-        window.location.href = "../home.html";
+        window.location.href = "./home.html";
       } catch (error) {
         errorMessage.textContent = error.message;
       }
@@ -107,11 +107,11 @@ signInBtn.addEventListener("click", async () => {
       if (email === "oluwaseadigun@gmail.com" && password1 === "@Seun1997") {
         const userCredential = await signInWithEmailAndPassword(auth, email, password1);
         alert("Admin Sign-In successful!");
-        window.location.href = "../admin.html"; // Redirect to admin page
+        window.location.href = "./admin.html"; // Redirect to admin page
       } else {
         const userCredential = await signInWithEmailAndPassword(auth, email, password1);
         alert("Sign-In successful!");
-        window.location.href = "../home.html"; // Redirect to homepage
+        window.location.href = "./home.html"; // Redirect to homepage
       }
     } catch (error) {
       errorMessage.textContent = "Failed to sign in. Please check your credentials.";
