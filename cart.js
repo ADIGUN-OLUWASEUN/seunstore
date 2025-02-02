@@ -424,7 +424,7 @@ function productDetails(i) {
   const cartProduct = JSON.parse(localStorage.getItem("cartArray")) || [];
   const selectedCartProduct = cartProduct[i];
   localStorage.setItem("selectedProduct", JSON.stringify(selectedCartProduct));
-  window.location.href = "./product.html";
+  window.location.href = "product.html";
 }
 
 function clearCart() {
@@ -433,5 +433,5 @@ function clearCart() {
 }
 
 function goToCheckout() {
-  window.location.href = "./checkout.html";
+  window.location.href = "checkout.html";
 }

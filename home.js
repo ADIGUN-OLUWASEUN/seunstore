@@ -222,7 +222,7 @@ function productDetails(i) {
   const products = JSON.parse(localStorage.getItem("allProducts"));
   const selectedProduct = products[i];
   localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
-  window.location.href = "./product.html";
+  window.location.href = "product.html";
 }
 
 function addToCart(i) {
@@ -258,30 +258,10 @@ function addToCart(i) {
 }
 
 cart.addEventListener("click", () => {
-  window.location.href = "./cart.html";
+  window.location.href = "cart.html";
 });
 
 
 
 
-//Data Destructuring
 
-// let user = {
-//   name:'ben',
-//   age:10,
-//   gender:'male',
-//   address: {
-//     city: 'ib',
-//     state:'oyo'
-//   }
-// }
-
-// const {name:username, age} = user //const username = user.name
-// console.log(username);
-
-// let arr = [1,2,3,4,5]
-// const [a,b,,,c] = arr
-// console.log(c);
-// //const a = arr[0]
-// //const b = arr[1]
-// //const c = arr[4]
