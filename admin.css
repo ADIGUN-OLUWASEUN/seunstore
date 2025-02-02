@@ -1,0 +1,12 @@
+.table {
+  margin-top: 20px;
+}
+
+.table-dark {
+  background-color: #343a40;
+  color: white;
+}
+
+.text-danger {
+  color: red;
+}
