@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeunStore - Sign In / Sign Up</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      body {
+        background-color: #f2f3f5; /* Light grey background */
+        font-family: 'Arial', sans-serif;
+      }
+      
+
+      .container {
+        margin-top: 50px;
+        padding: 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+      }
+
+      #form-title {
+        color: #333; /* Darker text for better readability */
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .form-control {
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-primary {
+        background-color: #ff6347; /* Tomato red */
+        border-color: #ff6347;
+        border-radius: 5px;
+        padding: 12px;
+        width: 100%;
+        font-weight: bold;
+      }
+
+      .btn-primary:hover {
+        background-color: #ff4500; /* Darker red on hover */
+      }
+
+      .toggle-link {
+        color: #007bff;
+        cursor: pointer;
+        font-weight: bold; /* Bold text */
+        display: block; /* Ensure it's block level for proper positioning */
+        margin-top: 15px; /* Add space between button and the link */
+        text-align: center; /* Center the link horizontally */
+      }
+
+      .toggle-link:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        background-color: #343a40;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        position: absolute;
+        /* bottom: 0; */
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      .logo img {
+        max-width: 150px;
+        margin-bottom: 20px;
+      }
+
+      .forgot-password {
+        color: #007bff;
+        cursor: pointer;
+      }
+
+      .forgot-password:hover {
+        text-decoration: underline;
+      }
+
+      /* Ensure alignment and spacing */
+      .form-label {
+        font-weight: bold;
+      }
+
+      .mb-3 {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <p style="text-align: center; font-size: large;"><i>WELCOME TO SEUNSTORE</i></p>
+    <div class="container">
+      <!-- Logo Section -->
+      <div class="text-center logo">
+        <img src="../DALL·E 2025-02-02 12.42.22 - A modern and professional logo design for 'SeunStore', an e-commerce brand. The logo should feature the brand name 'SeunStore' in bold, clean typograp.webp" alt="SeunStore Logo" />
+      </div>
+
+      <h2 class="text-center" id="form-title">Sign In</h2>
+
+      <!-- Error Message -->
+      <div id="error-message" class="error" style="color: red;"></div>
+
+      <!-- Input Fields -->
+      <div id="signUpFields" style="display: none;">
+        <div class="mb-3">
+          <label for="fullname" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullname" placeholder="Enter full name" />
+        </div>
+        <div class="mb-3">
+          <label for="phoneNum" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="phoneNum" placeholder="Enter phone number" />
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="mail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="mail" placeholder="Enter email" />
+      </div>
+      <div class="mb-3">
+        <label for="Password1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="Password1" placeholder="Password" />
+      </div>
+      <div id="confirmPasswordField" class="mb-3" style="display: none;">
+        <label for="Password2" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="Password2" placeholder="Confirm password" />
+      </div>
+
+      <!-- Single Toggle Button -->
+      <button type="button" id="toggle-password" class="btn btn-secondary">Show</button>
+
+      <!-- Forgot Password -->
+      <div class="text-center">
+        <p id="forgot-password" class="forgot-password">Forgot Password?</p>
+      </div>
+
+      <!-- Sign-In / Sign-Up Button -->
+      <button id="signIn" class="btn btn-primary">Sign In</button>
+
+      <!-- Toggle between Sign In and Sign Up -->
+      <div class="text-center mt-3">
+        <p class="toggle-link" id="toggle-link">Don't have an account? Sign Up</p>
+      </div>
+    </div>
+
+  
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; 2025 SeunStore | All Rights Reserved</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Firebase Scripts -->
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
